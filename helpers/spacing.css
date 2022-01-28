@@ -1,0 +1,177 @@
+/* border-radius */
+
+.rounded-s {
+  border-radius: 5px;
+}
+
+.rounded-m {
+  border-radius: 1rem;
+}
+
+.rounded-l {
+  border-radius: 1.5rem;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+/* || margins */
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.m-smaller {
+  margin: 0.8rem;
+}
+
+.m-small {
+  margin: 1.6rem;
+}
+
+.m-mid {
+  margin: 2.4rem;
+}
+
+.m-large {
+  margin: 3.2rem;
+}
+
+.m-larger {
+  margin: 6.4rem;
+}
+
+/* || vertical margin */
+.my-smaller {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.my-small {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.my-mid {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.my-large {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.my-larger {
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+}
+
+/* || horizontal margins */
+.mx-smaller {
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.mx-small {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+.mx-mid {
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+}
+
+.mx-large {
+  margin-left: 3.2rem;
+  margin-right: 3.2rem;
+}
+
+.mx-larger {
+  margin-left: 6.4rem;
+  margin-right: 6.4rem;
+}
+
+/* || padding */
+
+.p-smaller {
+  padding: 0.8rem;
+}
+
+.p-small {
+  padding: 1.6rem;
+}
+
+.p-mid {
+  padding: 2.4rem;
+}
+
+.p-large {
+  padding: 3.2rem;
+}
+
+.p-larger {
+  padding: 6.4rem;
+}
+
+/* || vertical padding  */
+.py-smaller {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.py-small {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+.py-mid {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.py-large {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+}
+
+.py-larger {
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+}
+
+/* || horizontal padding */
+.px-smaller {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.px-small {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.px-mid {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.px-large {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+
+.px-larger {
+  padding-left: 6.4rem;
+  padding-right: 6.4rem;
+}
