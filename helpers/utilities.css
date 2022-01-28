@@ -1,3 +1,5 @@
+/* || flex */
+
 .flex {
   display: flex;
 }
@@ -5,4 +7,10 @@
 .flex-center {
   align-items: center;
   justify-content: center;
+}
+
+/* || grid */
+
+.grid {
+  display: grid;
 }
