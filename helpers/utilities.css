@@ -14,3 +14,8 @@
 .grid {
   display: grid;
 }
+
+/* || transitions */
+.transition {
+  transition: .2s ease-in-out;
+}

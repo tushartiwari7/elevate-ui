@@ -1,0 +1,32 @@
+
+header {
+  width: 100%;
+  background: var(--primary);
+  color: var(--bg-primary);
+  font-size: 2rem;
+  padding: 2rem;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+  align-items: center;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+.header-list {
+  display: flex;
+  list-style: none;
+  background: var(--primary);
+}
+.header-list-item {
+  padding: 10px;
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 2rem;
+}
+
+.header-list-item:hover {
+  color: var(--text-color900);
+  cursor: pointer;
+}
+ 
