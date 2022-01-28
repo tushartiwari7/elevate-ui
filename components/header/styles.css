@@ -1,13 +1,16 @@
 
 header {
   width: 100%;
+  font-size: 2rem;
   background: var(--primary);
   color: var(--bg-primary);
-  font-size: 2rem;
   padding: 2rem;
+  align-items: center;
+}
+
+.header-title {
   font-weight: 700;
   font-family: Roboto, sans-serif;
-  align-items: center;
 }
 
 .header-nav {
