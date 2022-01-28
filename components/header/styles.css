@@ -1,0 +1,35 @@
+
+header {
+  width: 100%;
+  font-size: 2rem;
+  background: var(--primary);
+  color: var(--bg-primary);
+  padding: 2rem;
+  align-items: center;
+}
+
+.header-title {
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+.header-list {
+  display: flex;
+  list-style: none;
+  background: var(--primary);
+}
+.header-list-item {
+  padding: 10px;
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 2rem;
+}
+
+.header-list-item:hover {
+  color: var(--text-color900);
+  cursor: pointer;
+}
+ 
