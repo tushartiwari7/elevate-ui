@@ -1,0 +1,9 @@
+
+main.grid {
+  grid-template-rows: 100px auto auto 50px;
+  font-size: 1.5rem;
+}
+
+main.grid * {
+  outline: 1px solid coral;
+}

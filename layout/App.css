@@ -1,0 +1,29 @@
+@import '../helpers/styles.css';
+@import './main.css';
+.fullheight {
+  height: 100vh;
+}
+
+body {
+  grid-template-rows: 50px auto;
+  grid-template-areas: 
+  "aside header header header header header"
+  "aside main main main main nav";
+}
+
+header {
+  grid-area: header;
+  background-color: blue;
+}
+aside {
+  grid-area: aside;
+  background-color: gold;
+}
+main {
+  grid-area: main;
+  background-color: brown;
+}
+nav {
+  grid-area: nav;
+  background-color: hotpink;
+}
