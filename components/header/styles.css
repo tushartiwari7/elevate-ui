@@ -1,11 +1,8 @@
 
 header {
-  width: 100%;
-  font-size: 2rem;
   background: var(--primary);
   color: var(--bg-primary);
-  padding: 2rem;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .header-title {

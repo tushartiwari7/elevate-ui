@@ -1,35 +1,40 @@
 /* || fs = font-size */
 /* shorthand -  font: font-size/line-hieght */
 
-fs-xs {
-  font: 4.8rem/6.4rem;
+.fs-xl {
+  font-size: 3.2rem;
+  line-height: 4.0rem;
 }
-fs-s {
-  font: 3.2rem/4rem;
+.fs-l {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
 }
-fs-m {
-  font: 2.4rem/3.2rem;
+.fs-m {
+  font-size: 2.0rem;
+  line-height: 2.8rem;
 }
-fs-l {
-  font: 1.6rem/2.4rem;
+.fs-s {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
-fs-xl {
-  font: 0.8rem/1.6rem;
+.fs-xs {
+  font-size: 0.8rem;
+  line-height: 1.6rem;
 }
 
 /* || fw= font-weight */
-fw-light {
+.fw-light {
   font-weight: 300;
 }
-fw-regular {
+.fw-regular {
   font-weight: 400;
 }
-fw-semibold {
+.fw-semibold {
   font-weight: 600;
 }
-fw-bold {
+.fw-bold {
   font-weight: 700;
 }
-fw-black {
+.fw-black {
   font-weight: 900;
 }
