@@ -4,6 +4,18 @@
   display: flex;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 .flex-center {
   align-items: center;
   justify-content: center;
@@ -18,4 +30,12 @@
 /* || transitions */
 .transition {
   transition: .2s ease-in-out;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.fullwidth {
+  width: 100%;
 }

@@ -1,4 +1,4 @@
 @import './base/reset.css';
 @import '../helpers/styles.css';
-@import './layout/App.css';
+@import './layout/styles.css';
 @import './components/styles.css';
