@@ -1,0 +1,21 @@
+.sidebar {
+  grid-auto-flow: row;
+  grid-template-rows: 200px auto;
+}
+
+.sidebar-subtitle {
+  margin-bottom: 0.8rem;
+}
+
+.heading {
+  color: var(--primary900);
+  border-bottom: 1px solid var(--text-color100);
+}
+
+.brand-logo {
+  width: 100%;
+}
+.brand-name {
+  text-align: center;
+}
+
