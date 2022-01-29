@@ -3,10 +3,11 @@
 }
 
 body {
-  grid-template-rows: 50px auto;
+  grid-template-rows: 5rem auto;
+  grid-template-columns: 25rem auto;
   grid-template-areas: 
-  "aside header header header header header"
-  "aside main main main main nav";
+  "aside header header header header header header header header"
+  "aside main main main main main main main nav";
 }
 
 header {
@@ -14,7 +15,6 @@ header {
 }
 aside {
   grid-area: aside;
-  background-color: gold;
 }
 main {
   grid-area: main;

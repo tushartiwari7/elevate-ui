@@ -5,6 +5,7 @@
   position: relative;
   border-bottom: 3px solid transparent;
   width: fit-content; 
+  cursor: pointer;
 }
 
 .variant:hover {
