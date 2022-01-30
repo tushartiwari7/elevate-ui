@@ -38,4 +38,12 @@
   --text-color700: #171717;
   --text-color800: #111111;
   --text-color900: #090909;
+
+
+  /* other colors */
+  --green: #D8FBB4;
+  --dark-green: #087f23;
+  --yellow: #FCE8C3;
+  --orange: #f26419;
+
 }

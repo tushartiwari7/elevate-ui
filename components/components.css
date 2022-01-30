@@ -1,1 +1,9 @@
 @import './avatar/avatar.css';
+@import './alert/alert.css';
+
+
+.preview-container, .code-snippet {
+  align-items: flex-end;
+  width: 100%;
+  border: 2px solid var(--text-color100);
+}

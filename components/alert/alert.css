@@ -1,0 +1,33 @@
+.alert-box {
+  flex-flow: column;
+}
+
+.alert {
+  flex-flow: row;
+}
+
+.alert-primary {
+  background-color: var(--primary100);
+  color: var(--primary900);
+}
+
+.alert-danger {
+  background-color: var(--secondary100);
+  color: var(--secondary900);
+}
+
+.alert-secondary {
+  background-color: var(--text-color100);
+  color: var(--text-color700);
+}
+
+.alert-success {
+  background-color: var(--green);
+  color: var(--dark-green);
+}
+
+
+.alert-warning {
+  background-color: var(--yellow);
+  color: var(--orange);
+}

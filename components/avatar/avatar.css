@@ -2,14 +2,9 @@
   color: var(--primary800);
 }
 
-.preview-container, .code-snippet {
-  align-items: flex-end;
-  width: 100%;
-  border: 2px solid var(--text-color100);
-}
-
 .code-snippet {
   width: 100%;
+  height: 100%;
   justify-content: flex-start;
   transform: scale(1); 
   overflow:hidden;
@@ -40,6 +35,7 @@
 .avatar-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .prev-component,.next-component {

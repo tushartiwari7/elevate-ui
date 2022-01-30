@@ -32,7 +32,10 @@
         class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
         onclick="loadAvatar(this)"
       >Avatar</li>
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="AlertBtn" >Alert</li>
+      <li 
+        class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" 
+        onclick="loadAlert(this)"
+      >Alert</li>
       <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="BadgeBtn" >Badge</li>
       <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="CardBtn" >Card</li>
       <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="ImageBtn" >Image</li>
@@ -40,13 +43,13 @@
       <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="ToastBtn" >Toast</li>
     </ul>
   </aside>
-  <main class="grid mx-smaller" id="main">
-    <section class="desc flex " id="desc"></section>
-    <section class="prev flex " id="preview">Preview</section>
-    <section class="code flex " id="code">Code</section>
+  <main class="grid  px-mid" id="main">
+    <section class="desc flex" id="desc"></section>
+    <section class="prev flex" id="preview">Preview</section>
+    <section class="code flex" id="code">Code</section>
     <footer class="footer flex" id="footer">Footer</footer>
   </main>
-  <nav class="nav mx-mid p-mid" id="navigation">
+  <nav class="nav p-mid" id="navigation">
   </nav>
 </body>
 </html>
