@@ -1,0 +1,45 @@
+.alert-box {
+  flex-flow: column;
+}
+
+.alert {
+  flex-flow: row;
+  position: relative;
+}
+
+.alert-primary {
+  background-color: var(--primary100);
+  color: var(--primary900);
+}
+
+.alert-danger {
+  background-color: var(--secondary100);
+  color: var(--secondary900);
+}
+
+.alert-secondary {
+  background-color: var(--text-color100);
+  color: var(--text-color700);
+}
+
+.alert-success {
+  background-color: var(--green);
+  color: var(--dark-green);
+}
+
+.title {
+  margin-top: 2rem;
+}
+
+.alert-warning {
+  background-color: var(--yellow);
+  color: var(--orange);
+}
+.btn-close {
+  margin-left: auto;
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

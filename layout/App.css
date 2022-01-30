@@ -19,6 +19,10 @@ nav {
   grid-area: nav;
 }
 
+.code {
+  margin-bottom: 2rem;
+}
+
 .fullheight {
   height: 100vh;
 }

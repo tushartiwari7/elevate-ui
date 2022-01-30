@@ -2,20 +2,31 @@ const headerEl = document.getElementById("header");
 const headerTitle = document.getElementById("header-title");
 const navigationEl = document.getElementById("navigation");
 let previewEl = document.getElementById("preview");
-let componentDesc = document.getElementById("desc");
+let descEl = document.getElementById("desc");
 let codeEl = document.getElementById("code");
 let footerEl = document.getElementById("footer");
-let BadgeBtn = document.getElementById("BadgeBtn");
+
+const clickedItems = [];
+const removeActiveAll = () => {
+  clickedItems.forEach(item => {
+    item?.classList.remove("active");
+  })
+  clickedItems.length = 0;
+}
 
 // load avatar component
-const loadAvatar = () => {
+const loadAvatar = (src) => {
+  // make avatar nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
 
   // header title
   document.getElementById('header-title').innerText = "Avatar Component";
   //description
   fetch("./components/avatar/description.html")
   .then(res => res.text())
-  .then(html => componentDesc.innerHTML = html)
+  .then(html => descEl.innerHTML = html)
   .catch(err => console.log(err));
 
   //navigation
@@ -44,8 +55,11 @@ const loadAvatar = () => {
 
 }
 
-const loadSquareAvatar = () => {
-  
+const loadSquareAvatar = (src) => {
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
   // preview
   fetch("./components/avatar/variants/SquareAvatar/preview.html")
   .then(res => res.text())
@@ -60,8 +74,11 @@ const loadSquareAvatar = () => {
 
 }
 
-const loadTextAvatar = () => {
-  
+const loadTextAvatar = (src) => {
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
   // preview
   fetch("./components/avatar/variants/TextAvatar/preview.html")
   .then(res => res.text())
@@ -73,7 +90,71 @@ const loadTextAvatar = () => {
   .then(res => res.text())
   .then(html => codeEl.innerHTML = html)
   .catch(err => console.log(err));
-
 }
 
-loadAvatar();
+//load alert component
+
+const loadAlert = src => {
+  // make alert nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
+  // header title
+  document.getElementById('header-title').innerText = "Alert Component";
+  //description
+  fetch("./components/alert/description.html")
+  .then(res => res.text())
+  .then(html => descEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  //navigation
+  fetch("/components/alert/nav.html")
+  .then(res => res.text())
+  .then(html => navigationEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  // preview
+  fetch("./components/alert/default/preview.html")
+  .then(res => res.text())
+  .then(html => previewEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  // //code
+  fetch("./components/alert/default/code.html")
+  .then(res => res.text())
+  .then(html => codeEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  //footer
+  fetch("./components/alert/footer.html")
+  .then(res => res.text())
+  .then(html => footerEl.innerHTML = html)
+  .catch(err => console.log(err));
+}
+
+const loadAlertWithCloseBtn = src => {
+
+  // make alert nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+  
+  // preview
+  fetch("./components/alert/closeBtn/preview.html")
+  .then(res => res.text())
+  .then(html => previewEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  //code
+  fetch("./components/alert/closeBtn/code.html")
+  .then(res => res.text())
+  .then(html => codeEl.innerHTML = html)
+  .catch(err => console.log(err));
+}
+
+const closeAlert = src => {
+  src.parentElement.remove();
+}
+
+loadAvatar(null);

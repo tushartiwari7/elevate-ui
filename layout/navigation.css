@@ -1,5 +1,5 @@
 .nav {
-  border-left: 2px solid var(--text-color100);
+  /* border-left: 2px solid var(--text-color100); */
 }
 
 .variant {
@@ -9,6 +9,11 @@
   border-bottom: 3px solid transparent;
   width: fit-content; 
   cursor: pointer;
+}
+
+.active {
+  color: var(--text-color900);
+  border-bottom-color: var(--primary);
 }
 
 .variant:hover {

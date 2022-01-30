@@ -1,5 +1,11 @@
 main.grid {
   font-size: 1.5rem;
+  overflow: scroll;
+  border-left: 1px solid var(--text-color100);
+}
+
+main.grid::-webkit-scrollbar-x {
+  display: none;
 }
 
 .prev,.code {
