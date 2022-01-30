@@ -7,8 +7,20 @@ let codeEl = document.getElementById("code");
 let footerEl = document.getElementById("footer");
 let BadgeBtn = document.getElementById("BadgeBtn");
 
+const clickedItems = [];
+const removeActiveAll = () => {
+  clickedItems.forEach(item => {
+    item?.classList.remove("active");
+  })
+  clickedItems.length = 0;
+}
+
 // load avatar component
-const loadAvatar = () => {
+const loadAvatar = (src) => {
+  // make avatar nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
 
   // header title
   document.getElementById('header-title').innerText = "Avatar Component";
@@ -44,8 +56,11 @@ const loadAvatar = () => {
 
 }
 
-const loadSquareAvatar = () => {
-  
+const loadSquareAvatar = (src) => {
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
   // preview
   fetch("./components/avatar/variants/SquareAvatar/preview.html")
   .then(res => res.text())
@@ -60,8 +75,11 @@ const loadSquareAvatar = () => {
 
 }
 
-const loadTextAvatar = () => {
-  
+const loadTextAvatar = (src) => {
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
   // preview
   fetch("./components/avatar/variants/TextAvatar/preview.html")
   .then(res => res.text())
@@ -73,7 +91,6 @@ const loadTextAvatar = () => {
   .then(res => res.text())
   .then(html => codeEl.innerHTML = html)
   .catch(err => console.log(err));
-
 }
 
-loadAvatar();
+loadAvatar(null);

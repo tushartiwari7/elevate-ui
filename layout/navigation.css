@@ -11,6 +11,11 @@
   cursor: pointer;
 }
 
+.active {
+  color: var(--text-color900);
+  border-bottom-color: var(--primary);
+}
+
 .variant:hover {
   color: var(--text-color900);
   border-bottom-color: var(--primary);
