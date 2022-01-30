@@ -4,6 +4,7 @@
 
 .alert {
   flex-flow: row;
+  position: relative;
 }
 
 .alert-primary {
@@ -26,8 +27,19 @@
   color: var(--dark-green);
 }
 
+.title {
+  margin-top: 2rem;
+}
 
 .alert-warning {
   background-color: var(--yellow);
   color: var(--orange);
+}
+.btn-close {
+  margin-left: auto;
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }

@@ -94,7 +94,7 @@ const loadTextAvatar = (src) => {
 
 //load alert component
 
-const loadAlert = (src) => {
+const loadAlert = src => {
   // make alert nav-btn active
   removeActiveAll();
   clickedItems.push(src);
@@ -115,13 +115,13 @@ const loadAlert = (src) => {
   .catch(err => console.log(err));
 
   // preview
-  fetch("./components/alert/preview.html")
+  fetch("./components/alert/default/preview.html")
   .then(res => res.text())
   .then(html => previewEl.innerHTML = html)
   .catch(err => console.log(err));
 
   // //code
-  fetch("./components/alert/code.html")
+  fetch("./components/alert/default/code.html")
   .then(res => res.text())
   .then(html => codeEl.innerHTML = html)
   .catch(err => console.log(err));
@@ -131,7 +131,30 @@ const loadAlert = (src) => {
   .then(res => res.text())
   .then(html => footerEl.innerHTML = html)
   .catch(err => console.log(err));
+}
 
+const loadAlertWithCloseBtn = src => {
+
+  // make alert nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+  
+  // preview
+  fetch("./components/alert/closeBtn/preview.html")
+  .then(res => res.text())
+  .then(html => previewEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  //code
+  fetch("./components/alert/closeBtn/code.html")
+  .then(res => res.text())
+  .then(html => codeEl.innerHTML = html)
+  .catch(err => console.log(err));
+}
+
+const closeAlert = src => {
+  src.parentElement.remove();
 }
 
 loadAvatar(null);
