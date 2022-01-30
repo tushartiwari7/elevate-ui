@@ -9,15 +9,44 @@
   <script src="script/index.js" defer></script>
 </head>
 <body class="grid fullheight">
-  <header class="flex flex-center fullwidth p-mid fs-l" id="header"></header>
+  <header class="flex flex-center fullwidth p-mid fs-l" id="header">
+    <div class="header-title" id="header-title">
+      Component Name
+    </div>
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li class="header-list-item flex  flex-center transition"><i class="bi bi-brightness-high"></i></li>
+      </ul>
+    </nav>    
+  </header>
   <aside class="sidebar grid" id="sidebar">
+    <div class="brand">
+      <img src="https://picsum.photos/300/150" alt="Elevate UI Logo" class="brand-logo">
+      <h3 class="fs-xl p-smaller brand-name heading">Elevate UI</h3>
+    </div>    
+    <ul class="m-mid fs-m list-reset flex flex-col" >
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" >Get Started</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" >Installation</li>
+      <h4 class="my-mid fs-l fw-reerlar sidebar-subtitle heading">Components</h4>
+      <li 
+        class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
+        onclick="loadAvatar()"
+      >Avatar</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="AlertBtn" >Alert</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="BadgeBtn" >Badge</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="CardBtn" >Card</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="ImageBtn" >Image</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="InputBtn" >Input</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" id="ToastBtn" >Toast</li>
+    </ul>
   </aside>
-  <main class="grid" id="main">
-    <section class="desc flex flex-center">Description</section>
-    <section class="prev flex flex-center">Preview</section>
-    <section class="code flex flex-center">Code</section>
-    <footer class="flex flex-center">Footer</footer>
+  <main class="grid mx-smaller" id="main">
+    <section class="desc flex " id="desc"></section>
+    <section class="prev flex " id="preview">Preview</section>
+    <section class="code flex " id="code">Code</section>
+    <footer class="footer flex" id="footer">Footer</footer>
   </main>
-  <nav class="nav p-mid" id="navigation"></nav>
+  <nav class="nav mx-mid p-mid" id="navigation">
+  </nav>
 </body>
 </html>

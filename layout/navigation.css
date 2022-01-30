@@ -1,3 +1,6 @@
+.nav {
+  border-left: 2px solid var(--text-color100);
+}
 
 .variant {
   color: var(--text-color400);

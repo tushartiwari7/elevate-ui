@@ -1,13 +1,9 @@
-.fullheight {
-  height: 100vh;
-}
-
 body {
   grid-template-rows: 5rem auto;
-  grid-template-columns: 25rem auto;
+  grid-template-columns: 25rem auto 40rem;
   grid-template-areas: 
-  "aside header header header header header header header header"
-  "aside main main main main main main main nav";
+  "aside header header header header header header"
+  "aside main main main main main nav";
 }
 
 header {
@@ -18,8 +14,11 @@ aside {
 }
 main {
   grid-area: main;
-  background-color: brown;
 }
 nav {
   grid-area: nav;
+}
+
+.fullheight {
+  height: 100vh;
 }

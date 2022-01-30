@@ -1,5 +1,5 @@
 @import './main.css';
 @import './App.css';
-@import './header/header.css';
-@import './navigation/navigation.css';
-@import './sidebar/sidebar.css';
+@import './header.css';
+@import './navigation.css';
+@import './sidebar.css';
