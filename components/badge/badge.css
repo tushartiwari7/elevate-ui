@@ -1,0 +1,53 @@
+.badge-wrapper {
+  position: relative;
+}
+
+
+.badge-status {
+  position: absolute;
+  right: max(11%,10px);
+  bottom: max(11%,10px);
+  width: 15%;
+  height: 15%;
+  border: 2px solid white;
+}
+
+.online {
+  background-color: var(--dark-green);
+}
+.idle {
+  background-color: var(--orange);
+}
+.offline {
+  background-color: var(--secondary);
+}
+.invisible {
+  background-color: var(--text-color300);
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  position: relative;
+  margin: 2rem 1rem;
+  height: 50px;
+  line-height: 50px;
+}
+
+.badge-number {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--dark-green);
+  color: white;
+  text-align: center;
+}
+
+.badge-icon {
+  position: relative;
+}

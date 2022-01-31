@@ -19,3 +19,6 @@ main.grid::-webkit-scrollbar-x {
   justify-content: space-between;
   border-top: 2px solid var(--text-color100);
 }
+.footer > * {
+  cursor: pointer;
+}

@@ -1,6 +1,6 @@
 body {
   grid-template-rows: 5rem auto;
-  grid-template-columns: 25rem auto 40rem;
+  grid-template-columns: 25rem auto;
   grid-template-areas: 
   "aside header header header header header header"
   "aside main main main main main nav";
