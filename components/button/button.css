@@ -1,0 +1,61 @@
+.btn-wrapper {
+  gap: 2rem;
+}
+
+.btn {
+  border: 0;
+  color: white;
+  cursor: pointer;
+  background: white;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+.btn-secondary a {
+  color: var(--text-color);
+}
+
+.btn-secondary {
+  color: var(--text-color);
+  background-color: var(--text-color100);
+}
+.btn-primary {
+  background-color: var(--primary);
+}
+.btn-warning {
+  background-color: var(--orange);
+}
+.btn-error {
+  background-color: var(--secondary);
+}
+.btn-success {
+  background-color: var(--dark-green);
+}
+
+/* outlined buttons */
+
+.btn-outline-secondary {
+  color: var(--text-color);
+  border: 2px solid var(--text-color300);
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+.btn-outline-warning {
+  border: 2px solid var(--orange);
+  color: var(--orange);
+}
+.btn-outline-error {
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.btn-outline-success {
+  border: 2px solid var(--dark-green);
+  color: var(--dark-green);
+}
