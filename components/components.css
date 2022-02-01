@@ -1,5 +1,6 @@
 @import './avatar/avatar.css';
 @import './alert/alert.css';
+@import './badge/badge.css';
 
 
 .preview-container, .code-snippet {
