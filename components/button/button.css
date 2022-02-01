@@ -6,7 +6,6 @@
   border: 0;
   color: white;
   cursor: pointer;
-  background: white;
 }
 .btn:hover {
   opacity: 0.8;
@@ -46,6 +45,7 @@
 
 .btn-outline-secondary {
   transition: .2s background ease-in-out;
+  background: transparent;
   color: var(--text-color);
   border: 2px solid var(--text-color300);
 }
@@ -56,6 +56,7 @@
 }
 .btn-outline-primary {
   transition: .2s ease-in-out;
+  background: transparent;
   border: 2px solid var(--primary);
   color: var(--primary);
 }
@@ -66,6 +67,7 @@
 }
 .btn-outline-warning {
   transition: .2s ease-in-out;
+  background: transparent;
   border: 2px solid var(--orange);
   color: var(--orange);
 }
@@ -75,6 +77,7 @@
 }
 .btn-outline-error {
   transition: .2s ease-in-out;
+  background: transparent;
   border: 2px solid var(--secondary);
   color: var(--secondary);
 }
@@ -84,6 +87,7 @@
 }
 .btn-outline-success {
   transition: .2s ease-in-out;
+  background: transparent;
   border: 2px solid var(--dark-green);
   color: var(--dark-green);
 }
