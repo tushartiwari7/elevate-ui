@@ -1,7 +1,7 @@
 @import './avatar/avatar.css';
 @import './alert/alert.css';
 @import './badge/badge.css';
-
+@import './button/button.css';
 
 .preview-container, .code-snippet {
   align-items: flex-end;
