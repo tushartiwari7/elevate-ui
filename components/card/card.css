@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto,sans-serif;
+  background-color: var(--bg-secondary);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  height: fit-content;
+  width: max(300px, fit-content);
+  margin: auto;
+}
+
+.card-desc {
+  font-family: inherit;
+  padding: 1rem;
+  max-width: fit-content;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.card-content:hover {
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.card-img {
+  border-top-left-radius: 5px;
+  width: 100%;
+}
+
+.card-feedback {
+  gap: 5px;
+  margin: 6px 12px;
+}
+
+.btn-icon {
+  width: fit-content;
+  height: fit-content;
+  border: transparent;
+}

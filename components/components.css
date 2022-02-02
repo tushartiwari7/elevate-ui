@@ -2,6 +2,7 @@
 @import './alert/alert.css';
 @import './badge/badge.css';
 @import './button/button.css';
+@import './card/card.css';
 
 .preview-container, .code-snippet {
   align-items: flex-end;
