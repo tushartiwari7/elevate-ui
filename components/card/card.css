@@ -10,6 +10,15 @@
   margin: auto;
 }
 
+.card-badge {
+  top: 2rem;
+  right: -2px;
+  background-color: var(--primary);
+  color: white;
+  height: fit-content;
+  z-index: 1;
+}
+
 .card-desc {
   font-family: inherit;
   padding: 1rem;

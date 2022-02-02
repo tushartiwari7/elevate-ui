@@ -380,7 +380,6 @@ const loadRoundedButton = src => {
 
 // ------------------------------------------Card Component--------------------------------------------
 
-
 const loadCard = src => {
   // make card nav-btn active
   removeActiveAll();
@@ -418,6 +417,26 @@ const loadCard = src => {
   fetch("./components/card/footer.html")
   .then(res => res.text())
   .then(html => footerEl.innerHTML = html)
+  .catch(err => console.log(err));
+}
+
+const cardWithBadge = src => {
+
+  // make card nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+    
+  // preview
+  fetch("./components/card/cardWithBadge/preview.html")
+  .then(res => res.text())
+  .then(html => previewEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  //code
+  fetch("./components/card/cardWithBadge/code.html")
+  .then(res => res.text())
+  .then(html => codeEl.innerHTML = html)
   .catch(err => console.log(err));
 }
 
