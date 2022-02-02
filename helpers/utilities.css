@@ -39,3 +39,22 @@
 .fullwidth {
   width: 100%;
 }
+
+ /* || position */
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+  bottom: 0;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+.pos-fix {
+  position: fixed;
+}
