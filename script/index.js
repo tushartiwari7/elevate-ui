@@ -481,4 +481,25 @@ const textOnlyCard = src => {
   .catch(err => console.log(err));
 }
 
+const horizontalCard = src => {
+
+  // make card nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+    
+  // preview
+  fetch("./components/card/horizontal/preview.html")
+  .then(res => res.text())
+  .then(html => previewEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  //code
+  fetch("./components/card/horizontal/code.html")
+  .then(res => res.text())
+  .then(html => codeEl.innerHTML = html)
+  .catch(err => console.log(err));
+  
+}
+
 loadAvatar(null);
