@@ -461,4 +461,24 @@ const dismissableCard = src => {
 }
 
 
+const textOnlyCard = src => {
+
+  // make card nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+    
+  // preview
+  fetch("./components/card/textOnly/preview.html")
+  .then(res => res.text())
+  .then(html => previewEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  //code
+  fetch("./components/card/textOnly/code.html")
+  .then(res => res.text())
+  .then(html => codeEl.innerHTML = html)
+  .catch(err => console.log(err));
+}
+
 loadAvatar(null);
