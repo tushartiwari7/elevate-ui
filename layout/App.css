@@ -26,3 +26,33 @@ nav {
 .fullheight {
   height: 100vh;
 }
+
+@media only screen and (max-width: 992px) {
+  body {
+    grid-template-columns: 22rem auto 17rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    grid-template-rows: 5rem 5rem auto;
+    grid-template-columns: 20rem auto;
+    grid-template-areas:
+    "aside header"
+    "aside nav"
+    "aside main";
+  }
+  nav.nav {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--text-color100);
+  }
+  
+  nav > h4 {
+    display: none;
+  }
+  nav > ul.list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
