@@ -1,0 +1,24 @@
+.input {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px solid transparent;
+  outline: 1px solid var(--text-color100);
+}
+
+.input:focus,
+.input:active {
+  outline: 1px solid var(--primary);
+}
+
+.input-validator-text:focus,
+.input-validator-text:active {
+  outline: 1px solid var(--secondary400);
+}
+
+.input-label{
+  color: var(--secondary400);
+}
+
+.txtbox {
+  height: 15rem;
+}

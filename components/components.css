@@ -4,6 +4,7 @@
 @import './button/button.css';
 @import './card/card.css';
 @import './image/image.css';
+@import './input/input.css';
 
 .preview-container, .code-snippet {
   align-items: flex-end;
