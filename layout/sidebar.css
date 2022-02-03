@@ -1,6 +1,8 @@
 .sidebar {
   grid-auto-flow: row;
-  grid-template-rows: 200px auto;
+  /* grid-template-rows: 200px auto; */ 
+  grid-auto-rows:max-content;
+  transition: .25s ease-in;
 }
 
 .sidebar-subtitle {

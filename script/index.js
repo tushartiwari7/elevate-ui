@@ -21,6 +21,8 @@ const loadAvatar = (src) => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+
   // header title
   headerTitle.innerText = "Avatar Component";
   //description
@@ -164,6 +166,8 @@ const loadBadge = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+
   // header title
   headerTitle.innerText = "Badge Component";
   //description
@@ -225,6 +229,8 @@ const loadButton = src => {
   removeActiveAll();
   clickedItems.push(src);
   src?.classList.add("active");
+
+  closeSidebar();
 
   // header title
   headerTitle.innerText = "Button Component";
@@ -386,6 +392,8 @@ const loadCard = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+
   // header title
   headerTitle.innerText = "Card Component";
   
@@ -509,6 +517,8 @@ const loadImage = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+
   // header title
   headerTitle.innerText = "image Component";
   
@@ -589,6 +599,8 @@ const loadInput = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+  
   // header title
   headerTitle.innerText = "Input Component";
   
@@ -661,6 +673,14 @@ const loadValidationInput = src => {
   .then(html => codeEl.innerHTML = html)
   .catch(err => console.log(err));
 
+}
+
+// open sidebar
+const openSidebar = () => {
+  document.querySelector(".sidebar").classList.add("open");
+}
+const closeSidebar = () => {
+  document.querySelector(".sidebar").classList.remove("open");
 }
 
 

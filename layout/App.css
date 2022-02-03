@@ -27,6 +27,24 @@ nav {
   height: 100vh;
 }
 
+.hamburger {
+  margin-right: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+button.closeIcon {
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary200);
+  cursor: pointer;
+  display: none;
+}
+
 @media only screen and (max-width: 992px) {
   body {
     grid-template-columns: 22rem auto 17rem;
@@ -34,7 +52,7 @@ nav {
 }
 @media only screen and (max-width: 768px) {
   body {
-    grid-template-rows: 5rem 5rem auto;
+    grid-template-rows: 5rem auto auto;
     grid-template-columns: 20rem auto;
     grid-template-areas:
     "aside header"
@@ -53,6 +71,40 @@ nav {
     padding: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  
+  html {
+    font-size: 50%;
+  }
+  body {
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main";
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  button.closeIcon {
+    display: flex;
+  }
+
+  aside.sidebar {
+    position: absolute;
+    z-index: 10;
+    background: white;
+    height: 100vh;
+    width: 20rem;
+    left: -20rem;
+    border-right: 1px solid var(--text-color100);
   }
 }

@@ -10,6 +10,9 @@
 </head>
 <body class="grid fullheight">
   <header class="flex flex-center fullwidth p-mid fs-l" id="header">
+    <div class="hamburger fs-xl" onclick="openSidebar()">
+      <i class="bi bi-list"></i>
+    </div>
     <div class="header-title" id="header-title">
       Component Name
     </div>
@@ -23,10 +26,19 @@
     <div class="brand">
       <img src="https://picsum.photos/300/150" alt="Elevate UI Logo" class="brand-logo">
       <h3 class="fs-xl p-smaller brand-name heading">Elevate UI</h3>
+      <button class="btn btn-float closeIcon flex flex-center rounded-circle btn-outline-primary p-small fs-m pos-abs "
+      onclick="closeSidebar()"
+      >
+        <i class="bi bi-x"></i>
+      </button>
     </div>    
     <ul class="m-mid fs-m list-reset flex flex-col" >
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" >Get Started</li>
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" >Installation</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" 
+        onclick="closeSidebar()"
+      >Get Started</li>
+      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" 
+        onclick="closeSidebar()"
+      >Installation</li>
       <h4 class="my-mid fs-l fw-reerlar sidebar-subtitle heading">Components</h4>
       <li 
         class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
