@@ -1,0 +1,72 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto,sans-serif;
+  background-color: var(--bg-secondary);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  height: fit-content;
+  width: max(300px, fit-content);
+  margin: auto;
+}
+
+.card-badge {
+  top: 2rem;
+  right: -2px;
+  background-color: var(--primary);
+  color: white;
+  height: fit-content;
+  z-index: 1;
+}
+
+.card-desc {
+  font-family: inherit;
+  max-width: fit-content;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.card-content:hover {
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.card-img {
+  border-top-left-radius: 5px;
+}
+
+.card-feedback {
+  gap: 5px;
+  margin: 6px 12px;
+}
+
+.card-horizontal {
+  justify-content: space-evenly;
+  color: inherit;
+}
+
+.card-primary-btn {
+  flex-grow: 1;
+}
+
+.dismiss-btn {
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.btn-icon {
+  width: fit-content;
+  height: fit-content;
+  border: transparent;
+}
+
