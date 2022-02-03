@@ -3,6 +3,7 @@
 @import './badge/badge.css';
 @import './button/button.css';
 @import './card/card.css';
+@import './image/image.css';
 
 .preview-container, .code-snippet {
   align-items: flex-end;
