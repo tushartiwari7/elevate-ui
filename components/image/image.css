@@ -1,0 +1,19 @@
+.img-sm {
+  width: 8rem;
+  height: 8rem;
+}
+
+.img {
+  width: 12rem;
+  height: 12rem;
+}
+
+.img-lg {
+  width: 16rem;
+  height: 16rem;
+}
+
+.img-resp {
+  width: 100%;
+  height: max-content;
+}
