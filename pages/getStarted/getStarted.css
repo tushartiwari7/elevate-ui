@@ -1,0 +1,38 @@
+.feat-icons {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--text-color600)
+}
+
+.feat-card {
+  margin: .5rem;
+  cursor: pointer;
+}
+
+.feat-card-wrapper {
+  justify-content: space-evenly;
+}
+
+.color {
+  border: 1px solid var(--text-color100);
+  text-align: center;
+}
+
+.color:nth-child(1) {
+  background-color: var(--primary);
+  color: var(--bg-secondary);
+}
+.color:nth-child(2) {
+  background-color: var(--bg-primary);
+}
+.color:nth-child(3) {
+  background-color: var(--bg-secondary);
+}
+.color:nth-child(4) {
+  background-color: var(--text-color);
+  color: var(--bg-secondary);
+}
+
+.get-started-footer {
+  visibility: hidden;
+}

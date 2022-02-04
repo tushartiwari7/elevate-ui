@@ -26,7 +26,7 @@
     <div class="brand">
       <img src="https://picsum.photos/300/150" alt="Elevate UI Logo" class="brand-logo">
       <h3 class="fs-xl p-smaller brand-name heading">Elevate UI</h3>
-      <button class="btn btn-float closeIcon flex flex-center rounded-circle btn-outline-primary p-small fs-m pos-abs "
+      <button class="btn btn-float closeIcon flex flex-center rounded-circle btn-outline-primary p-small fs-m pos-abs"
       onclick="closeSidebar()"
       >
         <i class="bi bi-x"></i>
@@ -34,10 +34,10 @@
     </div>    
     <ul class="m-mid fs-m list-reset flex flex-col" >
       <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" 
-        onclick="closeSidebar()"
+        onclick="loadgetStartedPage()"
       >Get Started</li>
       <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" 
-        onclick="closeSidebar()"
+        onclick="loadInstallationPage()"
       >Installation</li>
       <h4 class="my-mid fs-l fw-reerlar sidebar-subtitle heading">Components</h4>
       <li 
@@ -66,10 +66,10 @@
     </ul>
   </aside>
   <main class="grid  px-mid" id="main">
-    <section class="desc flex" id="desc"></section>
-    <section class="prev flex" id="preview">Preview</section>
-    <section class="code flex" id="code">Code</section>
-    <footer class="footer flex" id="footer">Footer</footer>
+    <section class="desc flex flex-col" id="desc"></section>
+    <section class="prev flex" id="preview"></section>
+    <section class="code flex" id="code"></section>
+    <footer class="footer flex" id="footer"></footer>
   </main>
   <nav class="nav p-mid" id="navigation">
   </nav>
