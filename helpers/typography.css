@@ -23,6 +23,9 @@
 }
 
 /* || fw= font-weight */
+.fw-lighter {
+  font-weight: 100;
+}
 .fw-light {
   font-weight: 300;
 }

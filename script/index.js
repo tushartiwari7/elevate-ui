@@ -1,6 +1,7 @@
 const headerEl = document.getElementById("header");
 const headerTitle = document.getElementById("header-title");
 const navigationEl = document.getElementById("navigation");
+let mainEl = document.getElementById("main");
 let previewEl = document.getElementById("preview");
 let descEl = document.getElementById("desc");
 let codeEl = document.getElementById("code");
@@ -12,6 +13,63 @@ const removeActiveAll = () => {
     item?.classList.remove("active");
   })
   clickedItems.length = 0;
+}
+
+const list = [
+  {
+    id: "main",
+    path: "../components/list/main.html"
+  },
+  {
+    id: "navigation",
+    path: "../components/list/nav.html"
+  }
+]
+
+const loadList =src =>{
+
+  removeActiveAll();
+   clickedItems.push(src);
+   src?.classList.add("active");
+ 
+  closeSidebar();
+  headerTitle.innerText = "Lists";
+  list.forEach((type)=>{
+    fetch(type.path)
+    .then(resp=>resp.text())
+    .then(html=>document.getElementById(type.id).innerHTML = html)
+    .catch(err=>console.log(err))
+  })
+}
+
+
+const textUtils = [
+  {
+    id: "main",
+    path: "../components/textUtility/main.html"
+  },
+  {
+    id: "navigation",
+    path: "../components/textUtility/nav.html"
+  }
+]
+
+
+const loadTextUtility = src => {
+   // make installation nav-btn active
+   removeActiveAll();
+   clickedItems.push(src);
+   src?.classList.add("active");
+ 
+   closeSidebar();
+   headerTitle.innerText = "Text Utilities";
+  
+   textUtils.forEach((type)=>{
+    fetch(type.path)
+    .then(resp=>resp.text())
+    .then(html=>document.getElementById(type.id).innerHTML = html)
+    .catch(err=>console.log(err))
+  })
 }
 
 const loadgetStartedPage = src => {
