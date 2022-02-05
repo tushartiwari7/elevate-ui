@@ -14,12 +14,92 @@ const removeActiveAll = () => {
   clickedItems.length = 0;
 }
 
+const loadgetStartedPage = src => {
+    // make installation nav-btn active
+    removeActiveAll();
+    clickedItems.push(src);
+    src?.classList.add("active");
+  
+    closeSidebar();
+    
+  headerTitle.innerText = "Elevate UI";
+   
+  //introduction
+  fetch("../pages/getStarted/description.html")
+  .then(res => res.text())
+  .then(html => descEl.innerHTML = html)
+  .catch(err => console.log(err));
+  
+  //features
+  fetch("../pages/getStarted/features.html")
+  .then(res => res.text())
+  .then(html => previewEl.innerHTML = html)
+  .catch(err => console.log(err));
+  
+  //footer
+  fetch("../pages/getStarted/footer.html")
+  .then(res => res.text())
+  .then(html => footerEl.innerHTML = html)
+  .catch(err => console.log(err));
+
+  
+  //navigation
+  fetch("../pages/getStarted/nav.html")
+  .then(res => res.text())
+  .then(html => navigationEl.innerHTML = html)
+  .catch(err => console.log(err));
+ 
+  codeEl.innerHTML = `<div></div>`;
+}
+
+
+const loadInstallationPage = src => {
+  // make installation nav-btn active
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
+  closeSidebar();
+  
+headerTitle.innerText = "Elevate UI";
+ 
+//introduction
+fetch("../pages/Installation/description.html")
+.then(res => res.text())
+.then(html => descEl.innerHTML = html)
+.catch(err => console.log(err));
+
+//code
+fetch("../pages/Installation/code.html")
+.then(res => res.text())
+.then(html => codeEl.innerHTML = html)
+.catch(err => console.log(err));
+
+//footer
+fetch("../pages/Installation/footer.html")
+.then(res => res.text())
+.then(html => footerEl.innerHTML = html)
+.catch(err => console.log(err));
+
+
+//navigation
+fetch("../pages/Installation/nav.html")
+.then(res => res.text())
+.then(html => navigationEl.innerHTML = html)
+.catch(err => console.log(err));
+
+previewEl.innerHTML = `<div></div>`;
+}
+
+
 // -------------------------------------------------avatarComponent--------------------------------------
 const loadAvatar = (src) => {
   // make avatar nav-btn active
   removeActiveAll();
   clickedItems.push(src);
   src?.classList.add("active");
+
+  closeSidebar();
 
   // header title
   headerTitle.innerText = "Avatar Component";
@@ -52,7 +132,6 @@ const loadAvatar = (src) => {
   .then(res => res.text())
   .then(html => footerEl.innerHTML = html)
   .catch(err => console.log(err));
-
 }
 
 const loadSquareAvatar = (src) => {
@@ -100,6 +179,8 @@ const loadAlert = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+  
   // header title
   headerTitle.innerText = "Alert Component";
   //description
@@ -164,6 +245,8 @@ const loadBadge = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+
   // header title
   headerTitle.innerText = "Badge Component";
   //description
@@ -226,6 +309,8 @@ const loadButton = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+
   // header title
   headerTitle.innerText = "Button Component";
   //description
@@ -278,7 +363,6 @@ const loadOutlineButton = src => {
   .catch(err => console.log(err));
 }
 
-
 const loadlinkButton = src => {
   // make button nav-btn active
   removeActiveAll();
@@ -298,7 +382,6 @@ const loadlinkButton = src => {
   .catch(err => console.log(err));
 }
 
-
 const loadiconbutton = src => {
   // make button nav-btn active
   removeActiveAll();
@@ -317,7 +400,6 @@ const loadiconbutton = src => {
   .then(html => codeEl.innerHTML = html)
   .catch(err => console.log(err));
 }
-
 
 const loadFloatingButton = src => {
   // make button nav-btn active
@@ -357,7 +439,6 @@ const loadSizedButton = src => {
   .catch(err => console.log(err));
 }
 
-
 const loadRoundedButton = src => {
   // make button nav-btn active
   removeActiveAll();
@@ -377,7 +458,6 @@ const loadRoundedButton = src => {
   .catch(err => console.log(err));
 }
 
-
 // ------------------------------------------Card Component--------------------------------------------
 
 const loadCard = src => {
@@ -385,6 +465,8 @@ const loadCard = src => {
   removeActiveAll();
   clickedItems.push(src);
   src?.classList.add("active");
+
+  closeSidebar();
 
   // header title
   headerTitle.innerText = "Card Component";
@@ -509,6 +591,8 @@ const loadImage = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+
   // header title
   headerTitle.innerText = "image Component";
   
@@ -589,6 +673,8 @@ const loadInput = src => {
   clickedItems.push(src);
   src?.classList.add("active");
 
+  closeSidebar();
+  
   // header title
   headerTitle.innerText = "Input Component";
   
@@ -663,5 +749,12 @@ const loadValidationInput = src => {
 
 }
 
+// open sidebar
+const openSidebar = () => {
+  document.querySelector(".sidebar").classList.add("open");
+}
+const closeSidebar = () => {
+  document.querySelector(".sidebar").classList.remove("open");
+}
 
-loadAvatar(null);
+loadgetStartedPage(null);

@@ -14,6 +14,7 @@ aside {
 }
 main {
   grid-area: main;
+  scroll-behavior: smooth;
 }
 nav {
   grid-area: nav;
@@ -23,6 +24,89 @@ nav {
   margin-bottom: 2rem;
 }
 
-.fullheight {
+.full-height {
   height: 100vh;
+}
+
+.hamburger {
+  margin-right: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+button.close-icon {
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary200);
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    grid-template-columns: 22rem auto 17rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    grid-template-rows: 5rem auto auto;
+    grid-template-columns: 20rem auto;
+    grid-template-areas:
+    "aside header"
+    "aside nav"
+    "aside main";
+  }
+  nav.nav {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--text-color100);
+    height: fit-content;
+  }
+  
+  nav > h4 {
+    display: none;
+  }
+  nav > ul.list {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  html {
+    font-size: 50%;
+  }
+  body {
+    grid-template-rows: 5rem auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main";
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  button.close-icon {
+    display: flex;
+  }
+
+  aside.sidebar {
+    position: absolute;
+    z-index: 1;
+    background: white;
+    height: 100vh;
+    width: 20rem;
+    left: -20rem;
+    border-right: 1px solid var(--text-color100);
+  }
 }

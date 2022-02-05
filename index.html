@@ -8,8 +8,11 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script/index.js" defer></script>
 </head>
-<body class="grid fullheight">
-  <header class="flex flex-center fullwidth p-mid fs-l" id="header">
+<body class="grid full-height">
+  <header class="flex flex-center full-width p-md fs-l" id="header">
+    <div class="hamburger fs-xl" onclick="openSidebar()">
+      <i class="bi bi-list"></i>
+    </div>
     <div class="header-title" id="header-title">
       Component Name
     </div>
@@ -20,46 +23,55 @@
     </nav>    
   </header>
   <aside class="sidebar grid" id="sidebar">
-    <div class="brand">
-      <img src="https://picsum.photos/300/150" alt="Elevate UI Logo" class="brand-logo">
-      <h3 class="fs-xl p-smaller brand-name heading">Elevate UI</h3>
+    <div>
+      <img src="https://picsum.photos/300/150" alt="Elevate UI Logo" class="full-width">
+      <h3 class="fs-xl p-xs txt-center gutter-b">Elevate UI</h3>
+      <button class="btn btn-float close-icon flex flex-center rounded-circle btn-outline-primary p-sm fs-m pos-abs"
+      onclick="closeSidebar()"
+      >
+        <i class="bi bi-x"></i>
+      </button>
     </div>    
-    <ul class="m-mid fs-m list-reset flex flex-col" >
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" >Get Started</li>
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" >Installation</li>
-      <h4 class="my-mid fs-l fw-reerlar sidebar-subtitle heading">Components</h4>
+    <ul class="m-md fs-m list-reset flex flex-col" >
+      <li class="mx-md variant my-xs transition component-name pl-xs fw-light" 
+        onclick="loadgetStartedPage()"
+      >Get Started</li>
+      <li class="mx-md variant my-xs transition component-name pl-xs fw-light" 
+        onclick="loadInstallationPage()"
+      >Installation</li>
+      <h4 class="my-md fs-l fw-reerlar sidebar-subtitle gutter-b">Components</h4>
       <li 
-        class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
+        class="mx-md variant my-xs transition component-name pl-xs fw-light"
         onclick="loadAvatar(this)"
       >Avatar</li>
       <li 
-        class="mx-mid variant my-smaller transition component-name pl-smaller fw-light" 
+        class="mx-md variant my-xs transition component-name pl-xs fw-light" 
         onclick="loadAlert(this)"
       >Alert</li>
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
+      <li class="mx-md variant my-xs transition component-name pl-xs fw-light"
         onclick="loadBadge(this)"
       >Badge</li>
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
+      <li class="mx-md variant my-xs transition component-name pl-xs fw-light"
         onclick="loadButton(this)"
       >Button</li>
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
+      <li class="mx-md variant my-xs transition component-name pl-xs fw-light"
         onclick="loadCard(this)"
       >Cards</li>
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
+      <li class="mx-md variant my-xs transition component-name pl-xs fw-light"
         onclick="loadImage(this)"
       >Image</li>
-      <li class="mx-mid variant my-smaller transition component-name pl-smaller fw-light"
+      <li class="mx-md variant my-xs transition component-name pl-xs fw-light"
         onclick="loadInput(this)"
       >Input</li>
     </ul>
   </aside>
-  <main class="grid  px-mid" id="main">
-    <section class="desc flex" id="desc"></section>
-    <section class="prev flex" id="preview">Preview</section>
-    <section class="code flex" id="code">Code</section>
-    <footer class="footer flex" id="footer">Footer</footer>
+  <main class="grid  px-md" id="main">
+    <section class="desc flex flex-col" id="desc"></section>
+    <section class="prev flex" id="preview"></section>
+    <section class="code flex" id="code"></section>
+    <footer class="footer flex" id="footer"></footer>
   </main>
-  <nav class="nav p-mid" id="navigation">
+  <nav class="nav p-md" id="navigation">
   </nav>
 </body>
 </html>

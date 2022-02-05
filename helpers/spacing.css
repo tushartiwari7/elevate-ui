@@ -30,148 +30,148 @@
   margin-right: auto;
 }
 
-.m-smaller {
+.m-xs {
   margin: 0.8rem;
 }
 
-.m-small {
+.m-sm {
   margin: 1.2rem;
 }
 
-.m-mid {
+.m-md {
   margin: 1.6rem;
 }
 
-.m-large {
+.m-lg {
   margin: 2.0rem;
 }
 
-.m-larger {
+.m-xl {
   margin: 2.4rem;
 }
 
 /* || vertical margin */
-.my-smaller {
+.my-xs {
   margin-top: 0.4rem;
   margin-bottom: 0.4rem;
 }
 
-.my-small {
+.my-sm {
   margin-top: 1.6rem;
   margin-bottom: 1.6rem;
 }
 
-.my-mid {
+.my-md {
   margin-top: 2.4rem;
   margin-bottom: 2.4rem;
 }
 
-.my-large {
+.my-lg {
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
 }
 
-.my-larger {
+.my-xl {
   margin-top: 6.4rem;
   margin-bottom: 6.4rem;
 }
 
 /* || horizontal margins */
-.mx-smaller {
+.mx-xs {
   margin-left: 0.8rem;
   margin-right: 0.8rem;
 }
 
-.mx-small {
+.mx-sm {
   margin-left: 1.6rem;
   margin-right: 1.6rem;
 }
 
-.mx-mid {
+.mx-md {
   margin-left: 2.4rem;
   margin-right: 2.4rem;
 }
 
-.mx-large {
+.mx-lg {
   margin-left: 3.2rem;
   margin-right: 3.2rem;
 }
 
-.mx-larger {
+.mx-xl {
   margin-left: 6.4rem;
   margin-right: 6.4rem;
 }
 
 /* || padding */
 
-.p-smaller {
+.p-xs {
   padding: 0.8rem;
 }
 
-.p-small {
+.p-sm {
   padding: 1.6rem;
 }
 
-.p-mid {
+.p-md {
   padding: 2.4rem;
 }
 
-.p-large {
+.p-lg {
   padding: 3.2rem;
 }
 
-.p-larger {
+.p-xl {
   padding: 6.4rem;
 }
 
 /* || vertical padding  */
-.py-smaller {
+.py-xs {
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
 }
 
-.py-small {
+.py-sm {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
 }
 
-.py-mid {
+.py-md {
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
 }
 
-.py-large {
+.py-lg {
   padding-top: 3.2rem;
   padding-bottom: 3.2rem;
 }
 
-.py-larger {
+.py-xl {
   padding-top: 6.4rem;
   padding-bottom: 6.4rem;
 }
 
 /* || horizontal padding */
-.px-smaller {
+.px-xs {
   padding-left: 0.8rem;
   padding-right: 0.8rem;
 }
 
-.px-small {
+.px-sm {
   padding-left: 1.6rem;
   padding-right: 1.6rem;
 }
 
-.px-mid {
+.px-md {
   padding-left: 2.4rem;
   padding-right: 2.4rem;
 }
 
-.px-large {
+.px-lg {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
 }
 
-.px-larger {
+.px-xl {
   padding-left: 6.4rem;
   padding-right: 6.4rem;
 }

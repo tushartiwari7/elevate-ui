@@ -1,0 +1,39 @@
+.feat-icons {
+  font-size: 5rem;
+  text-align: center;
+  color: var(--text-color600)
+}
+
+.feat-card {
+  margin: .5rem;
+  cursor: pointer;
+}
+
+.feat-card-wrapper {
+  justify-content: space-evenly;
+}
+
+.color-palette-item {
+  border: 1px solid var(--text-color100);
+  text-align: center;
+}
+
+.color-palette-item.primary {
+  background-color: var(--primary);
+  color: var(--bg-secondary);
+}
+.color-palette-item.bg-primary {
+  background-color: var(--bg-primary);
+  color: unset;
+}
+.color-palette-item.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+.color-palette-item.text-color {
+  background-color: var(--text-color);
+  color: var(--bg-secondary);
+}
+
+.get-started-footer {
+  visibility: hidden;
+}

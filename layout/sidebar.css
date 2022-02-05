@@ -1,21 +1,20 @@
 .sidebar {
   grid-auto-flow: row;
-  grid-template-rows: 200px auto;
+  /* grid-template-rows: 200px auto; */ 
+  grid-auto-rows:max-content;
+  transition: .25s ease-in;
 }
 
 .sidebar-subtitle {
   margin-bottom: 0.8rem;
 }
 
-.heading {
+.gutter-b {
   color: var(--primary900);
   border-bottom: 1px solid var(--text-color100);
 }
 
-.brand-logo {
-  width: 100%;
-}
-.brand-name {
+.txt-center {
   text-align: center;
 }
 
