@@ -13,22 +13,23 @@
   justify-content: space-evenly;
 }
 
-.color {
+.color-palette-item {
   border: 1px solid var(--text-color100);
   text-align: center;
 }
 
-.color:nth-child(1) {
+.color-palette-item.primary {
   background-color: var(--primary);
   color: var(--bg-secondary);
 }
-.color:nth-child(2) {
+.color-palette-item.bg-primary {
   background-color: var(--bg-primary);
+  color: unset;
 }
-.color:nth-child(3) {
+.color-palette-item.bg-secondary {
   background-color: var(--bg-secondary);
 }
-.color:nth-child(4) {
+.color-palette-item.text-color {
   background-color: var(--text-color);
   color: var(--bg-secondary);
 }

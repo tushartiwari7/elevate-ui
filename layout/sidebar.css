@@ -9,15 +9,12 @@
   margin-bottom: 0.8rem;
 }
 
-.heading {
+.gutter-b {
   color: var(--primary900);
   border-bottom: 1px solid var(--text-color100);
 }
 
-.brand-logo {
-  width: 100%;
-}
-.brand-name {
+.txt-center {
   text-align: center;
 }
 

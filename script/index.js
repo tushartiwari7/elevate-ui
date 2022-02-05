@@ -92,7 +92,6 @@ previewEl.innerHTML = `<div></div>`;
 }
 
 
-
 // -------------------------------------------------avatarComponent--------------------------------------
 const loadAvatar = (src) => {
   // make avatar nav-btn active
