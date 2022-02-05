@@ -6,9 +6,7 @@
 @import './image/image.css';
 @import './input/input.css';
 @import './list/list.css';
-
 @import './textUtility/textUtility.css';
-
 
 .preview-container, .code-snippet {
   align-items: flex-end;
@@ -16,7 +14,6 @@
   border: 2px solid var(--text-color100);
   flex-wrap: wrap;
 }
-
 .code-snippet {
   min-height: 20rem;
 }

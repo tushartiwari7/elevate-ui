@@ -42,7 +42,6 @@ const loadList =src =>{
   })
 }
 
-
 const textUtils = [
   {
     id: "main",
@@ -53,7 +52,6 @@ const textUtils = [
     path: "../components/textUtility/nav.html"
   }
 ]
-
 
 const loadTextUtility = src => {
    // make installation nav-btn active

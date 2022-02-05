@@ -1,16 +1,12 @@
 .sidebar  {
   grid-auto-flow: row;
-  /* grid-template-rows: 200px auto; */ 
   grid-auto-rows:max-content;
   transition: .25s ease-in;
   overflow: scroll;
 }
-
 .sidebar::-webkit-scrollbar {
   width: 5px;
 }
-
-
 .sidebar-subtitle {
   margin-bottom: 0.8rem;
 }
@@ -23,4 +19,3 @@
 .txt-center {
   text-align: center;
 }
-
