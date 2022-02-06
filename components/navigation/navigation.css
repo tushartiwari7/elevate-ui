@@ -1,0 +1,8 @@
+.header {
+  background: var(--primary);
+  justify-content: space-between;
+  color: white;
+}
+.bi {
+  cursor: pointer;
+}

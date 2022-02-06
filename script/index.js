@@ -72,6 +72,33 @@ const loadTextUtility = src => {
   })
 }
 
+const navigation = [
+  {
+    id: "main",
+    path: "../components/navigation/main.html"
+  },
+  {
+    id: "navigation",
+    path: "../components/navigation/nav.html"
+  }
+]
+
+const loadNavigation = src => {  
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
+  closeSidebar();
+  headerTitle.innerText = "Navigation Component";
+ 
+  navigation.forEach((type)=>{
+   fetch(type.path)
+   .then(resp=>resp.text())
+   .then(html=>document.getElementById(type.id).innerHTML = html)
+   .catch(err=>console.log(err))
+ })
+}
+
 const loadgetStartedPage = src => {
     // make installation nav-btn active
     removeActiveAll();
