@@ -99,6 +99,39 @@ const loadNavigation = src => {
  })
 }
 
+const modal = [
+  {
+    id: "main",
+    path: "../components/modal/main.html"
+  },
+  {
+    id: "navigation",
+    path: "../components/modal/nav.html"
+  }
+]
+
+const loadModal = src => {  
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
+  closeSidebar();
+  headerTitle.innerText = "Modal Component";
+ 
+  modal.forEach((type)=>{
+   fetch(type.path)
+   .then(resp=>resp.text())
+   .then(html=>document.getElementById(type.id).innerHTML = html)
+   .catch(err=>console.log(err))
+ })
+}
+
+const openModal = () => {
+  document.getElementById('modal').style.display = 'flex';
+}
+const closeModal = () => document.getElementById('modal').style.display = 'none';
+
+
 const loadgetStartedPage = src => {
     // make installation nav-btn active
     removeActiveAll();
