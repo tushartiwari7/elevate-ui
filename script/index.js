@@ -42,7 +42,6 @@ const loadList =src =>{
   })
 }
 
-
 const textUtils = [
   {
     id: "main",
@@ -53,7 +52,6 @@ const textUtils = [
     path: "../components/textUtility/nav.html"
   }
 ]
-
 
 const loadTextUtility = src => {
    // make installation nav-btn active
@@ -183,6 +181,36 @@ const loadToast = src => {
    .catch(err=>console.log(err))
  })
 }
+
+
+const grid = [
+  {
+    id: "main",
+    path: "../components/grid/main.html"
+  },
+  {
+    id: "navigation",
+    path: "../components/grid/nav.html"
+  }
+]
+
+const loadGrid = src => {
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
+  closeSidebar();
+  headerTitle.innerText = "Grid Utility";
+ 
+  grid.forEach((type)=>{
+   fetch(type.path)
+   .then(resp=>resp.text())
+   .then(html=>document.getElementById(type.id).innerHTML = html)
+   .catch(err=>console.log(err))
+ })
+}
+
+
 
 const loadgetStartedPage = src => {
     // make installation nav-btn active

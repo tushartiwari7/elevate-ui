@@ -11,6 +11,7 @@
 @import './modal/modal.css';
 @import './rating/rating.css';
 @import './toast/toast.css';
+@import './grid/grid.css';
 
 .preview-container, .code-snippet {
   align-items: flex-end;
