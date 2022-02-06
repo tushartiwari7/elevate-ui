@@ -6,9 +6,9 @@
 @import './image/image.css';
 @import './input/input.css';
 @import './list/list.css';
-
+@import './navigation/navigation.css';
 @import './textUtility/textUtility.css';
-
+@import './modal/modal.css';
 
 .preview-container, .code-snippet {
   align-items: flex-end;
