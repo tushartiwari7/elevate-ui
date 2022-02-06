@@ -1,0 +1,7 @@
+div.toast-container {
+  align-items: center;
+}
+.toast {
+  width: 50%;
+  justify-content: space-between;
+}

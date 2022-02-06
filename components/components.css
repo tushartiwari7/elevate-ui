@@ -9,6 +9,8 @@
 @import './navigation/navigation.css';
 @import './textUtility/textUtility.css';
 @import './modal/modal.css';
+@import './rating/rating.css';
+@import './toast/toast.css';
 
 .preview-container, .code-snippet {
   align-items: flex-end;
