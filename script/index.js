@@ -131,6 +131,58 @@ const openModal = () => {
 }
 const closeModal = () => document.getElementById('modal').style.display = 'none';
 
+const rating = [
+  {
+    id: "main",
+    path: "../components/rating/main.html"
+  },
+  {
+    id: "navigation",
+    path: "../components/rating/nav.html"
+  }
+]
+const loadRating = src => {
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
+  closeSidebar();
+  headerTitle.innerText = "Rating Component";
+ 
+  rating.forEach((type)=>{
+   fetch(type.path)
+   .then(resp=>resp.text())
+   .then(html=>document.getElementById(type.id).innerHTML = html)
+   .catch(err=>console.log(err))
+ })
+}
+
+const toast = [
+  {
+    id: "main",
+    path: "../components/toast/main.html"
+  },
+  {
+    id: "navigation",
+    path: "../components/toast/nav.html"
+  }
+]
+
+const loadToast = src => {
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
+  closeSidebar();
+  headerTitle.innerText = "Toast Component";
+ 
+  toast.forEach((type)=>{
+   fetch(type.path)
+   .then(resp=>resp.text())
+   .then(html=>document.getElementById(type.id).innerHTML = html)
+   .catch(err=>console.log(err))
+ })
+}
 
 const loadgetStartedPage = src => {
     // make installation nav-btn active

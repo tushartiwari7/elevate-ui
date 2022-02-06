@@ -1,0 +1,44 @@
+<section class="desc flex flex-col" id="desc">
+  <p class="desc m-md p-s fs-m">
+    Toasts are used to notify the user about the success, failure or progress about any certain event.
+  </p>
+</section>
+<section class="prev flex">
+  <h4 class="title fs-l gutter-b full-width">Preview: Toast </h4>
+  <div class=" preview-container toast-container rounded-s p-md flex flex-center flex-col full-width">  
+    <div class="toast  btn btn-primary flex flex-center px-sm py-xs m-sm ">PRIMARY
+      <i class="bi bi-x fs-xl"></i>
+    </div>
+    <div class="toast  btn btn-secondary flex flex-center px-sm py-xs m-sm ">SECONDARY
+      <i class="bi bi-x fs-xl"></i>
+    </div>
+    <div class="toast  btn btn-error flex flex-center px-sm py-xs m-sm ">ERROR
+      <i class="bi bi-x fs-xl"></i>
+    </div>
+    <div class="toast  btn btn-success flex flex-center px-sm py-xs m-sm ">SUCCESS
+      <i class="bi bi-x fs-xl"></i>
+    </div>
+    <div class="toast  btn btn-warning flex flex-center px-sm py-xs m-sm ">WARNING
+      <i class="bi bi-x fs-xl"></i>
+    </div>
+  </div>  
+</section>
+<section class="code flex" id="code">
+  <h4 class="title fs-m">Code</h4>
+    <iframe
+      class="code-snippet flex"
+      src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522toast%2520%2520btn%2520btn-primary%2520flex%2520flex-center%2520px-sm%2520py-xs%2520m-sm%2520%2522%253EPRIMARY%250A%2520%2520%253Ci%2520class%253D%2522bi%2520bi-x%2520fs-xl%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520%2520btn%2520btn-secondary%2520flex%2520flex-center%2520px-sm%2520py-xs%2520m-sm%2520%2522%253ESECONDARY%250A%2520%2520%253Ci%2520class%253D%2522bi%2520bi-x%2520fs-xl%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520%2520btn%2520btn-error%2520flex%2520flex-center%2520px-sm%2520py-xs%2520m-sm%2520%2522%253EERROR%250A%2520%2520%253Ci%2520class%253D%2522bi%2520bi-x%2520fs-xl%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520%2520btn%2520btn-success%2520flex%2520flex-center%2520px-sm%2520py-xs%2520m-sm%2520%2522%253ESUCCESS%250A%2520%2520%253Ci%2520class%253D%2522bi%2520bi-x%2520fs-xl%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522toast%2520%2520btn%2520btn-warning%2520flex%2520flex-center%2520px-sm%2520py-xs%2520m-sm%2520%2522%253EWARNING%250A%2520%2520%253Ci%2520class%253D%2522bi%2520bi-x%2520fs-xl%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+      sandbox="allow-scripts allow-same-origin">
+    </iframe>
+</section>
+
+<footer class="footer flex" id="footer">
+  <div class="prev-component flex m-md" onclick="loadModal()">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xY meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+    <span>Modal</span>
+  </div>
+  <div class="next-component flex m-md" onclick="loadToast()">
+    <span>Toast</span>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
+  </div> 
+</footer>

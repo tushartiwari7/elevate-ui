@@ -1,0 +1,4 @@
+.rating-star {
+  gap: 5px;
+  color: var(--primary700);
+}
