@@ -1,7 +1,7 @@
-.li {
+.list-group {
   list-style: none;
 }
-.li-item {
+.list-group-item {
   border: 1px solid var(--text-color100);
   justify-content: space-between;
   align-items: center;
