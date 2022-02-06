@@ -1,11 +1,6 @@
-const headerEl = document.getElementById("header");
 const headerTitle = document.getElementById("header-title");
 const navigationEl = document.getElementById("navigation");
 let mainEl = document.getElementById("main");
-let previewEl = document.getElementById("preview");
-let descEl = document.getElementById("desc");
-let codeEl = document.getElementById("code");
-let footerEl = document.getElementById("footer");
 
 const clickedItems = [];
 const removeActiveAll = () => {
@@ -75,8 +70,6 @@ const loadInstallationPage = src => {
     .catch(err=>console.log(err))
   })
 }
-
-
 // -------------------------------------------------avatarComponent--------------------------------------
 const avatar = [
   {
@@ -170,8 +163,6 @@ const loadBadge = src => {
     .catch(err=>console.log(err))
   })
 }
-
-
 // ------------------------------------------ButtonComponent--------------------------------------------
 
 const buttons = [
@@ -459,7 +450,6 @@ const loadToast = src => {
  })
 }
 
-
 const grid = [
   {
     id: "main",
@@ -487,7 +477,6 @@ const loadGrid = src => {
  })
 }
 
-
 // open sidebar
 const openSidebar = () => {
   document.querySelector(".sidebar").classList.add("open");
@@ -495,5 +484,4 @@ const openSidebar = () => {
 const closeSidebar = () => {
   document.querySelector(".sidebar").classList.remove("open");
 }
-
 loadgetStartedPage(null);
