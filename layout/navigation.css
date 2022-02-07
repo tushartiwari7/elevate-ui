@@ -1,26 +1,4 @@
-.nav {
-  /* border-left: 2px solid var(--text-color100); */
-}
-
-.variant {
-  color: var(--text-color400);
-  text-decoration: none;
-  position: relative;
-  border-bottom: 3px solid transparent;
-  width: fit-content; 
-  cursor: pointer;
-}
-
 .active {
   color: var(--text-color900);
-  border-bottom-color: var(--primary);
-}
-
-.variant:hover {
-  color: var(--text-color900);
-  border-bottom-color: var(--primary);
-}
-
-.variant:focus {
   border-bottom-color: var(--primary);
 }

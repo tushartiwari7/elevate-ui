@@ -175,3 +175,7 @@
   padding-left: 6.4rem;
   padding-right: 6.4rem;
 }
+/* horizontal line */
+.hr {
+  height: 1px solid var(--text-color100);
+}
