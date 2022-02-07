@@ -1,0 +1,20 @@
+.box {
+  height: 10rem;
+  background: var(--secondary200);
+}
+
+.grid {
+  display: grid;
+}
+
+.preview-container > .grid {
+  gap: 1rem;
+}
+
+.grid-col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
