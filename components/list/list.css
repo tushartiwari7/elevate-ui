@@ -1,8 +1,27 @@
-.list-group {
+.list {
   list-style: none;
 }
+
 .list-group-item {
   border: 1px solid var(--text-color100);
   justify-content: space-between;
   align-items: center;
+}
+
+.list-item {
+  color: var(--text-color400);
+  text-decoration: none;
+  position: relative;
+  border-bottom: 3px solid transparent;
+  width: fit-content; 
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: var(--text-color900);
+  border-bottom-color: var(--primary);
+}
+
+.list-item:focus {
+  border-bottom-color: var(--primary);
 }

@@ -32,10 +32,6 @@
   transition: .2s ease-in-out;
 }
 
-.list-reset {
-  list-style: none;
-}
-
 .full-width {
   width: 100%;
 }
