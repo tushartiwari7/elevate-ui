@@ -13,6 +13,9 @@
 @import './toast/toast.css';
 @import './grid/grid.css';
 
+/* helper classes */
+@import '../helpers/helpers.css';
+
 .preview-container, .code-snippet {
   align-items: flex-end;
   width: 100%;
