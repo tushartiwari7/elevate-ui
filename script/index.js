@@ -283,6 +283,35 @@ const loadInput = src => {
   })
 }
 
+const forms = [
+  {
+    id: "main",
+    path: "../components/forms/main.html"
+  },
+  {
+    id: "navigation",
+    path: "../components/forms/nav.html"
+  }
+];
+
+const loadForms = src => {
+  removeActiveAll();
+  clickedItems.push(src);
+  src?.classList.add("active");
+
+  closeSidebar();
+  
+  // header title
+  headerTitle.innerText = "Forms Component";
+  
+  forms.forEach((type)=>{
+    fetch(type.path)
+    .then(resp=>resp.text())
+    .then(html=>document.getElementById(type.id).innerHTML = html)
+    .catch(err=>console.log(err))
+  })
+}
+
 const list = [
   {
     id: "main",
