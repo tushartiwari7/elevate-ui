@@ -22,3 +22,7 @@
 .txtbox {
   height: 15rem;
 }
+
+.flex.spread {
+  justify-content: space-between;
+}
