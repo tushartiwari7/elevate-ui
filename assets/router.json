@@ -1,0 +1,172 @@
+{
+  "alerts": [
+    {
+      "id": "main",
+      "path": "../components/alert/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/alert/nav.html"
+    }
+  ],
+  "avatar": [
+    {
+      "id": "main",
+      "path": "../components/avatar/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/avatar/nav.html"
+    }
+  ],
+  "badges": [
+    {
+      "id": "main",
+      "path": "../components/badge/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/badge/nav.html"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "main",
+      "path": "../components/button/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/button/nav.html"
+    }
+  ],
+  "card": [
+    {
+      "id": "main",
+      "path": "../components/card/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/card/nav.html"
+    }
+  ],
+  "forms": [
+    {
+      "id": "main",
+      "path": "../components/forms/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/forms/nav.html"
+    }
+  ],
+  "getStarted": [
+    {
+      "id": "main",
+      "path": "../pages/getStarted/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../pages/getStarted/nav.html"
+    }
+  ],
+  "grid": [
+    {
+      "id": "main",
+      "path": "../components/grid/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/grid/nav.html"
+    }
+  ],
+  "input": [
+    {
+      "id": "main",
+      "path": "../components/input/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/input/nav.html"
+    }
+  ],
+  "image": [
+    {
+      "id": "main",
+      "path": "../components/image/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/image/nav.html"
+    }
+  ],
+  "install": [
+    {
+      "id": "main",
+      "path": "../pages/Installation/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../pages/Installation/nav.html"
+    }
+  ],
+  "list": [
+    {
+      "id": "main",
+      "path": "../components/list/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/list/nav.html"
+    }
+  ],
+  "modal": [
+    {
+      "id": "main",
+      "path": "../components/modal/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/modal/nav.html"
+    }
+  ],
+  "navigation": [
+    {
+      "id": "main",
+      "path": "../components/navigation/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/navigation/nav.html"
+    }
+  ],
+  "rating": [
+    {
+      "id": "main",
+      "path": "../components/rating/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/rating/nav.html"
+    }
+  ],
+  "textUtils": [
+    {
+      "id": "main",
+      "path": "../components/textUtility/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/textUtility/nav.html"
+    }
+  ],
+  "toast": [
+    {
+      "id": "main",
+      "path": "../components/toast/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/toast/nav.html"
+    }
+  ]
+}
