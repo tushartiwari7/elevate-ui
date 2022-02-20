@@ -8,6 +8,7 @@ header {
 .header-title {
   font-weight: 700;
   font-family: Roboto, sans-serif;
+  text-transform: capitalize;
 }
 
 .header-nav {
