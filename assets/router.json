@@ -149,6 +149,16 @@
       "path": "../components/rating/nav.html"
     }
   ],
+  "slider": [
+    {
+      "id": "main",
+      "path": "../components/slider/main.html"
+    },
+    {
+      "id": "navigation",
+      "path": "../components/slider/nav.html"
+    }
+  ],
   "textUtils": [
     {
       "id": "main",

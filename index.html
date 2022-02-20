@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elevate UI | CSS Component Library</title>
+  <title>Elevate UI | CSS Component Library</title>  
+  <link rel="icon" type="image/x-icon" href="./assets/favIcon.png">
   <link rel="stylesheet" href="styles.css">
   <script src="script/index.js" defer></script>
 </head>
@@ -24,8 +25,7 @@
   </header>
   <aside class="sidebar grid" id="sidebar">
     <div>
-      <img src="https://picsum.photos/300/150" alt="Elevate UI Logo" class="full-width">
-      <h3 class="fs-xl p-xs txt-center gutter-b">Elevate UI</h3>
+      <img src="./assets/logo.png" alt="Elevate UI Logo" class="full-width">
       <button class="btn btn-float close-icon flex flex-center rounded-circle btn-outline-primary p-sm fs-m pos-abs"
       onclick="closeSidebar()"
       >
@@ -78,6 +78,9 @@
       <li class="mx-md list-item my-xs transition pl-xs fw-light"
         onclick="loadPage(this,'rating')"
       >Rating</li>
+      <li class="mx-md list-item my-xs transition pl-xs fw-light"
+        onclick="loadPage(this,'slider')"
+      >Slider</li>
       <li class="mx-md list-item my-xs transition pl-xs fw-light"
         onclick="loadPage(this,'toast')"
       >Toast</li>

@@ -2,3 +2,7 @@
   gap: 5px;
   color: var(--primary700);
 }
+
+.slider {
+  accent-color: var(--dark-green);
+}

@@ -1,6 +1,6 @@
 main.grid {
   font-size: 1.5rem;
-  overflow: scroll;
+  overflow-y: scroll;
   border-left: 1px solid var(--text-color100);
 }
 

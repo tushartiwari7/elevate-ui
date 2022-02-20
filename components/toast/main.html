@@ -4,7 +4,7 @@
   </p>
 </section>
 <section class="prev flex">
-  <h4 class="title fs-l gutter-b full-width">Preview: Toast </h4>
+  <h4 class="title fs-l gutter-b full-width" id="toast">Preview: Toast </h4>
   <div class=" preview-container toast-container rounded-s p-md flex flex-center flex-col full-width">  
     <div class="toast spread btn btn-primary flex flex-center px-sm py-xs m-sm ">PRIMARY
       <i class="bi bi-x fs-xl"></i>
@@ -33,12 +33,12 @@
 </section>
 
 <footer class="footer flex" id="footer">
-  <div class="prev-component flex m-md" onclick="loadModal()">
+  <div class="prev-component flex m-md" onclick="loadPage(null,'slider')">
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xY meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
-    <span>Modal</span>
+    <span>Slider</span>
   </div>
-  <div class="next-component flex m-md" onclick="loadToast()">
-    <span>Toast</span>
+  <div class="next-component flex m-md" onclick="loadPage(null,'grid')">
+    <span>Grids</span>
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
   </div> 
 </footer>

@@ -20,6 +20,7 @@ Furthermore, it also includes plenty of Components build on top of utility class
 - Navigation
 - Modal 
 - Rating
+- Slider
 - Toast
 - Text Utilities
 - Grid Utility

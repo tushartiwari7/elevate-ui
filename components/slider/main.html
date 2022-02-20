@@ -1,0 +1,40 @@
+<section class="desc flex flex-col" id="desc">
+  <p class="desc m-md p-s fs-m">
+    Navigation Component can be used as a header for you website containing easy access to different parts of your website.
+  </p>
+</section>
+<section class="prev flex">
+  <h4 class="title fs-l gutter-b full-width" id="preview-navbar">Preview: Slider </h4>
+  <div class="preview-container rounded-s p-md full-width">  
+    <input class="slider full-width" type="range" name="slider" min="2000" max="50000" id="slider">
+    <datalist id="slider" class="flex spread">
+      <option value="2000" label="2k"></option>
+      <option value="5000" label="5k"></option>
+      <option value="10000" label="10k"></option>
+      <option value="20000" label="20k"></option>
+      <option value="30000" label="30k"></option>
+      <option value="40000" label="40k"></option>
+      <option value="50000" label="50k"></option>
+    </datalist>
+  </div>  
+</section>
+<section class="code flex" id="code">
+  <h4 class="title fs-m">Code</h4>
+    <iframe
+      class="code-snippet flex"
+      src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%253Cinput%2520class%253D%2522slider%2520full-width%2522%2520type%253D%2522range%2522%2520name%253D%2522slider%2522%2520min%253D%25222000%2522%2520max%253D%252250000%2522%2520id%253D%2522slider%2522%253E%250A%253Cdatalist%2520id%253D%2522slider%2522%2520class%253D%2522flex%2520spread%2522%253E%250A%2520%2520%253Coption%2520value%253D%25222000%2522%2520label%253D%25222k%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%25225000%2522%2520label%253D%25225k%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%252210000%2522%2520label%253D%252210k%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%252220000%2522%2520label%253D%252220k%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%252230000%2522%2520label%253D%252230k%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%252240000%2522%2520label%253D%252240k%2522%253E%253C%252Foption%253E%250A%2520%2520%253Coption%2520value%253D%252250000%2522%2520label%253D%252250k%252B%2522%253E%253C%252Foption%253E%250A%253C%252Fdatalist%253E"
+      sandbox="allow-scripts allow-same-origin">
+    </iframe>
+
+</section>
+
+<footer class="footer flex" id="footer">
+  <div class="prev-component flex m-md" onclick="loadPage(null,'rating')">
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xY meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+    <span>Rating</span>
+  </div>
+  <div class="next-component flex m-md" onclick="loadPage(null,'toast')">
+    <span>Toast</span>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
+  </div> 
+</footer>
