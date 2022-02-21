@@ -1,5 +1,13 @@
-const headerTitle = document.getElementById("header-title");
+/*
+This JS file acts as a router to all different pages.
 
+When user requests a page by through sidebar nav links on footer loadPage() gets called.
+  1. It will find the path of file that needs to be rendered on DOM using router.json (line 32)
+  2. then load the html files and render it on the DOM using innerHTML.
+
+*/
+
+const headerTitle = document.getElementById("header-title");
 
 const clickedItems = [];
 let router;
@@ -46,7 +54,7 @@ const firstRender = async () => {
     router = await data.json();
     return loadPage(null,'getStarted');
   } catch (err) {
-    console.log(err);    
+    console.log(err);
   }
 }
 
