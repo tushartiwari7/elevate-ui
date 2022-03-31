@@ -48,6 +48,12 @@ const closeSidebar = () => {
   document.querySelector(".sidebar").classList.remove("open");
 }
 
+// open/close modal
+const openModal = () => {
+  document.getElementById('modal').style.display = 'flex';
+}
+const closeModal = () => document.getElementById('modal').style.display = 'none';
+
 const firstRender = async () => {
   try {
     const data = await fetch('../assets/router.json');

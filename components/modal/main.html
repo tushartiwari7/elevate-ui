@@ -1,40 +1,113 @@
 <section class="desc flex flex-col" id="desc">
   <p class="desc m-md p-s fs-m">
-      Modals are useful when you want to show some customized alert message before performing a critical action.
+    Modals are useful when you want to show some customized alert message before
+    performing a critical action.
   </p>
 </section>
 <section class="prev flex">
-  <h4 class="title fs-l gutter-b full-width" id="basic-modal">Preview: </h4>
-  <div class="preview-container rounded-s p-md flex flex-center full-width">  
-    <button class="btn btn-primary px-sm py-xs" onclick="openModal()">Open Modal</button>
-    <div class="modal rounded-s flex flex-col p-md" id="modal">
-      <div class="modal-exit full-width">
-        <i class="bi bi-x fs-xl btn-outline-primary rounded-circle" onclick="closeModal()"></i>
-      </div>
-      <p class="desc fs-m">Are you sure you want to proceed?</p>
-      <div class="btn-group flex">
-        <button class="btn btn-primary px-sm py-xs" onclick="closeModal()">Yes</button>
-        <button class="btn btn-outline-primary px-sm py-xs" onclick="closeModal()">No</button>
+  <h4 class="title fs-l gutter-b full-width" id="basic-modal">Preview:</h4>
+  <div class="preview-container rounded-s p-md flex flex-center full-width">
+    <button class="btn btn-primary px-sm py-xs" onclick="openModal()">
+      Open Modal
+    </button>
+    <div
+      class="pos-abs modal-container flex flex-center"
+      id="modal"
+      onclick="closeModal()"
+    >
+      <div class="modal rounded-s flex flex-col p-md">
+        <div class="modal-exit full-width">
+          <i
+            class="bi bi-x fs-xl btn-outline-primary rounded-circle"
+            onclick="closeModal()"
+          ></i>
+        </div>
+        <p class="desc fs-m">Are you sure you want to proceed?</p>
+        <div class="btn-group flex">
+          <button class="btn btn-primary px-sm py-xs" onclick="closeModal()">
+            Yes
+          </button>
+          <button
+            class="btn btn-outline-primary px-sm py-xs"
+            onclick="closeModal()"
+          >
+            No
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <section class="code flex" id="code">
   <h4 class="title fs-m">Code</h4>
-    <iframe
-      class="code-snippet flex"
-      src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2520rounded-s%2520flex%2520flex-col%2520p-md%2522%2520id%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-exit%2520full-width%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-x%2520fs-xl%2520btn-outline-primary%2520rounded-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cp%2520class%253D%2522desc%2520fs-m%2522%253EAre%2520you%2520sure%2520you%2520want%2520to%2520proceed%253F%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522btn-group%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520px-sm%2520py-xs%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2520px-sm%2520py-xs%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-      sandbox="allow-scripts allow-same-origin">
-    </iframe>
+  <iframe
+    class="code-snippet flex"
+    src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2520rounded-s%2520flex%2520flex-col%2520p-md%2522%2520id%253D%2522modal%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522modal-exit%2520full-width%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522bi%2520bi-x%2520fs-xl%2520btn-outline-primary%2520rounded-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cp%2520class%253D%2522desc%2520fs-m%2522%253EAre%2520you%2520sure%2520you%2520want%2520to%2520proceed%253F%253C%252Fp%253E%250A%2520%2520%253Cdiv%2520class%253D%2522btn-group%2520flex%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520px-sm%2520py-xs%2522%253EYes%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-outline-primary%2520px-sm%2520py-xs%2522%253ENo%253C%252Fbutton%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+    sandbox="allow-scripts allow-same-origin"
+  >
+  </iframe>
 </section>
 
 <footer class="footer flex" id="footer">
-  <div class="prev-component flex m-md"onclick="loadPage(null,'list')">
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xY meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+  <div class="prev-component flex m-md" onclick="loadPage(null,'list')">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      width="1em"
+      height="1em"
+      preserveAspectRatio="xY meet"
+      viewBox="0 0 24 24"
+    >
+      <rect x="0" y="0" width="24" height="24" fill="none" stroke="none" />
+      <g fill="none">
+        <path
+          d="M11 5l-7 7l7 7"
+          stroke="#1e3a8a"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4 12h16"
+          stroke="#1e3a8a"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
     <span>Lists</span>
   </div>
   <div class="next-component flex m-md" onclick="loadPage(null,'navigation')">
     <span>Navigation</span>
-    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
-  </div> 
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      width="1em"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+    >
+      <g transform="translate(24 0) scale(-1 1)">
+        <g fill="none">
+          <path
+            d="M11 5l-7 7l7 7"
+            stroke="#1e3a8a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4 12h16"
+            stroke="#1e3a8a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </g>
+    </svg>
+  </div>
 </footer>
