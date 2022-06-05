@@ -1,67 +1,130 @@
-
-    <!--  -->
-    <section class="desc flex flex-col" id="desc">
-      <p class="desc m-md p-sm fs-m">
-        Image Components are used to dsiplay Images on websites, which are screen responsive. They expand upto the width of the container they are in.<br/>
-        You can choose you image to be square, rounded like a circle or a responsive on which changes itself with respect to screen sizes.
-      </p>      
-    </section>
-    <!-- square -->
-    <section class="prev flex" id="preview">
-      <h4 class="title fs-l" id="img-square">Preview: Sized Square Image</h4>
-      <div class="btn-wrapper preview-container rounded-s p-md flex flex-center full-width fs-xl">
-        <img src="https://picsum.photos/200/200" class="img-sm" />
-        <img src="https://picsum.photos/200/200" class="img" />
-        <img src="https://picsum.photos/200/200" class="img-lg" />
-      </div>  
-    </section>
-    <section class="code flex" id="code">
-      <h4 class="title fs-l">Code</h4>
-      <iframe
-        class="code-snippet flex"
-        src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img-sm%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img-lg%2522%2520%252F%253E"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
-    </section>
-    <!-- rounded -->
-    <section class="prev flex" id="preview">
-      <h4 class="title fs-l" id="img-round">Preview: Sized Rounded Images</h4>
-      <div class="btn-wrapper preview-container rounded-s p-md flex flex-center full-width fs-xl">
-        <img src="https://picsum.photos/200/200" class="img-sm rounded-circle" />
-        <img src="https://picsum.photos/200/200" class="img rounded-circle" />
-        <img src="https://picsum.photos/200/200" class="img-lg rounded-circle" />
-      </div>        
-    </section>
-    <section class="code flex" id="code">
-      <h4 class="title fs-l">Code</h4>
-      <iframe
-        class="code-snippet flex"
-        src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img-sm%2520rounded-circle%2522%2520%252F%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img%2520rounded-circle%2522%2520%252F%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img-lg%2520rounded-circle%2522%2520%252F%253E"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
-    </section>
-    <!-- responsive -->
-    <section class="prev flex" id="preview">
-      <h4 class="title fs-l" id="img-resp">Preview: Responsive Images</h4>
-      <div class="btn-wrapper preview-container rounded-s p-md flex flex-center full-width fs-xl">
-        <img src="https://picsum.photos/400/100" class="full-width" />
-      </div>  
-    </section>
-    <section class="code flex" id="code">
-      <h4 class="title fs-l">Code</h4>
-      <iframe
-        class="code-snippet flex"
-        src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F400%252F100%2522%2520class%253D%2522full-width%2522%2520%252F%253E"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>      
-    </section>
-    <footer class="footer flex" id="footer">
-      <div class="prev-component flex m-md" onclick="loadPage(null,'forms')">
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><rect x="0" y="0" width="24" height="24" fill="none" stroke="none" /><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
-        <span>Forms</span>
-      </div>
-      <div class="next-component flex m-md" onclick="loadPage(null,'input')">
-        <span>Input</span>
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><g fill="none"><path d="M11 5l-7 7l7 7" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></g></svg>
-      </div>      
-    </footer>
+<!--  -->
+<section class="desc flex flex-col" id="desc">
+  <p class="desc m-md p-sm fs-m">
+    Image Components are used to dsiplay Images on websites, which are screen
+    responsive. They expand upto the width of the container they are in. You can
+    choose you image to be square, rounded like a circle or a responsive on
+    which changes itself with respect to screen sizes.
+  </p>
+</section>
+<!-- square -->
+<section class="prev flex" id="preview">
+  <h4 class="title fs-l" id="img-square">Preview: Sized Square Image</h4>
+  <div
+    class="btn-wrapper preview-container rounded-s p-md flex flex-center full-width fs-xl"
+  >
+    <img src="https://picsum.photos/200/200" class="img-sm" />
+    <img src="https://picsum.photos/200/200" class="img" />
+    <img src="https://picsum.photos/200/200" class="img-lg" />
+  </div>
+</section>
+<section class="code flex" id="code">
+  <h4 class="title fs-l">Code</h4>
+  <iframe
+    class="code-snippet flex"
+    src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img-sm%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img%2522%2520%252F%253E%250A%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img-lg%2522%2520%252F%253E"
+    sandbox="allow-scripts allow-same-origin"
+  >
+  </iframe>
+</section>
+<!-- rounded -->
+<section class="prev flex" id="preview">
+  <h4 class="title fs-l" id="img-round">Preview: Sized Rounded Images</h4>
+  <div
+    class="btn-wrapper preview-container rounded-s p-md flex flex-center full-width fs-xl"
+  >
+    <img src="https://picsum.photos/200/200" class="img-sm rounded-circle" />
+    <img src="https://picsum.photos/200/200" class="img rounded-circle" />
+    <img src="https://picsum.photos/200/200" class="img-lg rounded-circle" />
+  </div>
+</section>
+<section class="code flex" id="code">
+  <h4 class="title fs-l">Code</h4>
+  <iframe
+    class="code-snippet flex"
+    src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img-sm%2520rounded-circle%2522%2520%252F%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img%2520rounded-circle%2522%2520%252F%253E%250A%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520class%253D%2522img-lg%2520rounded-circle%2522%2520%252F%253E"
+    sandbox="allow-scripts allow-same-origin"
+  >
+  </iframe>
+</section>
+<!-- responsive -->
+<section class="prev flex" id="preview">
+  <h4 class="title fs-l" id="img-resp">Preview: Responsive Images</h4>
+  <div
+    class="btn-wrapper preview-container rounded-s p-md flex flex-center full-width fs-xl"
+  >
+    <img src="https://picsum.photos/400/100" class="full-width" />
+  </div>
+</section>
+<section class="code flex" id="code">
+  <h4 class="title fs-l">Code</h4>
+  <iframe
+    class="code-snippet flex"
+    src="https://carbon.now.sh/embed?bg=rgba%2863%2C117%2C161%2C1%29&t=one-light&wt=sharp&l=htmlmixed&width=680&ds=true&dsyoff=100px&dsblur=100px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Ubuntu+Mono&fs=14px&lh=117%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F400%252F100%2522%2520class%253D%2522full-width%2522%2520%252F%253E"
+    sandbox="allow-scripts allow-same-origin"
+  >
+  </iframe>
+</section>
+<footer class="footer flex" id="footer">
+  <div class="prev-component flex m-md" onclick="loadPage(null,'forms')">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      width="1em"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+    >
+      <rect x="0" y="0" width="24" height="24" fill="none" stroke="none" />
+      <g fill="none">
+        <path
+          d="M11 5l-7 7l7 7"
+          stroke="#1e3a8a"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4 12h16"
+          stroke="#1e3a8a"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
+    </svg>
+    <span>Forms</span>
+  </div>
+  <div class="next-component flex m-md" onclick="loadPage(null,'input')">
+    <span>Input</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      width="1em"
+      height="1em"
+      preserveAspectRatio="xMidYMid meet"
+      viewBox="0 0 24 24"
+    >
+      <g transform="translate(24 0) scale(-1 1)">
+        <g fill="none">
+          <path
+            d="M11 5l-7 7l7 7"
+            stroke="#1e3a8a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4 12h16"
+            stroke="#1e3a8a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </g>
+    </svg>
+  </div>
+</footer>

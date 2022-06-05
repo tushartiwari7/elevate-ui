@@ -13,24 +13,19 @@
     <div
       class="pos-abs modal-container flex flex-center"
       id="modal"
-      onclick="closeModal()"
+      onclick="closeModal(event)"
     >
-      <div class="modal rounded-s flex flex-col p-md">
+      <div class="modal rounded-s flex flex-col p-md" id="modal-content">
         <div class="modal-exit full-width">
           <i
             class="bi bi-x fs-xl btn-outline-primary rounded-circle"
-            onclick="closeModal()"
+            id="exit"
           ></i>
         </div>
-        <p class="desc fs-m">Are you sure you want to proceed?</p>
+        <p class="desc fs-m">Are you sure you want proceed?</p>
         <div class="btn-group flex">
-          <button class="btn btn-primary px-sm py-xs" onclick="closeModal()">
-            Yes
-          </button>
-          <button
-            class="btn btn-outline-primary px-sm py-xs"
-            onclick="closeModal()"
-          >
+          <button class="btn btn-primary px-sm py-xs" id="yes">Yes</button>
+          <button class="btn btn-outline-primary px-sm py-xs" id="no">
             No
           </button>
         </div>
