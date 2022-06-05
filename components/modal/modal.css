@@ -1,16 +1,16 @@
-
 .modal {
   width: 50rem;
   height: 20rem;
   background: var(--primary100);
   position: absolute;
-  z-index: 1;
   justify-content: space-between;
-  
 }
 
-div.modal {
+div.modal-container {
   display: none;
+  inset: 0;
+  z-index: 1;
+  backdrop-filter: brightness(0.5);
 }
 
 .modal-exit {
