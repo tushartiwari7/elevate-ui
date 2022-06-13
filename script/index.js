@@ -18,7 +18,10 @@ const removeActiveAll = () => {
   clickedItems.length = 0;
 };
 
-const loadPage = (src, targetPage, utility = false) => {
+const loadPage = async (src, targetPage, utility = false) => {
+  // remove The previous Component Variant from url when moving to another Component
+  if (location.href.includes("#")) location.href = "#";
+
   // make installation nav-btn active
   removeActiveAll();
   clickedItems.push(src);
