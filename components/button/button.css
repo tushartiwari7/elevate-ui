@@ -7,17 +7,19 @@
   color: white;
   cursor: pointer;
 }
+
 .btn:hover {
   opacity: 0.8;
 }
+
 a.btn {
   border: none;
   text-decoration: none;
 }
+
 a.btn:hover {
   text-decoration: underline;
-  color: var(--text-color);
-  background: transparent;
+  opacity: 0.5;
 }
 
 .btn-float {
